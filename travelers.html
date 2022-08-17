@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS Bootstrap-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <title>Japanese Food</title>
+    <link rel="icon" href="img/fav/fav.png" type="image">
+</head>
+<body>
+    <nav class="navbar fixed-top navbar-expand-xl navbar-dark bg-dark">
+    <!-- <nav class="navbar navbar-expand-xl navbar-dark style="background-color: #ee3311;"> color replacement option -->
+        <div class="container">
+            <a href="" class="navbar-brand">Japanese Food</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" 
+            aria-controls="navbarContent" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav me-auto mb-6">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>                                        
+                    <li class="nav-item">
+                        <a href="recipes.html" class="nav-link">Recipes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="travelers.html" class="nav-link">Traveler's Tags</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Contents
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                          <li><a class="dropdown-item" href="index.html">Dishes that reflect the essence of Japanese cuisine</a></li>
+                          <li><a class="dropdown-item" href="drinks.html">The most popular drinks</a></li>
+                          <li><a class="dropdown-item" href="desserts.html">Japanese desserts</a></li>                          
+                        </ul>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Entrance</button>
+                    <button class="btn btn-outline-danger ms-3">Exit</button>
+                </div>
+            </div>
+        </div>
+    </nav>  
+
+    <div class="modal fade" id="exampleModal" tbindex="-1" aria-labelledby="exanleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Registration</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="inputEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="inputEmail" aria-describedby="Email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="inputPass" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="inputPass">
+                        </div>
+                        <fieldset>
+                            <div class="fow mb-3">
+                                <legend class="col-form-label col-sm-2">Specify</legend>
+                                <div class="col-sm-10">
+                                    <div class="form-check">
+                                        <input type="radio" class="form-check-input" 
+                                        name="radios" value="option1" id="radios1" checked>
+                                        <label for="radios1" class="for-check-label">18 years old</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="radio" class="form-check-input" 
+                                        name="radios" value="option1" id="radios2">
+                                        <label for="radios2" class="for-check-label">no 18 years old</label>
+                                    </div>
+                                    
+                                </div>
+                           </div>
+                           <div class="row mb-3">
+                                <div class="col-form-label col-sm-2">Checkbox</div>
+                                <div class="col-sm-10">
+                                    <div class="form-check">
+                                        <input type="checkbox" id="gridCheck" class="form-check-input">
+                                        <label for="gridCheck" class="form-check-label">Save password</label>
+                                    </div>
+                                </div>
+                           </div>
+                        </fieldset>
+                    </form>
+                </div>
+            <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save chsnges</button>
+                </div>
+            </div>
+     
+        </div>
+    </div>
+    
+    <main>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/sunsplash.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/japanq.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/qunsplash.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/xunsplash.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Предыдущий</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Следующий</span>
+            </button>
+        </div>
+
+        <div class="container">
+            <div class="container">
+                <h2 class="text-start my-5">Explore Your Interests</h2>
+                <p class="fs-5"></p>                
+            </div>
+            <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Tea Ceremony</h5>
+                <p class="card-text">The Japanese tea ceremony (茶道, sadō or chadō, lit. "the way of tea" or 茶の湯, chanoyu) is a Japanese tradition steeped in history. It is a ceremonial way of preparing and drinking green tea typically in a traditional tearoom with tatami floor. Beyond just serving and receiving tea, one of the main purposes of the tea ceremony is for the guests to enjoy the hospitality of the host in an atmosphere distinct from the fast pace of everyday life.</p>
+                <p class="card-text"><small class="text-muted">Free to use under the Unsplash License / Publication / Holding the tea bowl - August 2022</small></p>
+              </div>
+              <img src="img/tea.png" class="card-img-bottom" alt="...">
+            </div>
+            </div>                  
+        </div>
+        
+    </main>
+    <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
+            <li class="nav-item"><a href="recipes.html" class="nav-link px-2 text-muted">Recipes</a></li>
+            <li class="nav-item"><a href="travelers.html" class="nav-link px-2 text-muted">Traveler's Tags</a></li>
+            <li class="nav-item"><a href="drinks.html" class="nav-link px-2 text-muted">Popular drinks</a></li>
+            <li class="nav-item"><a href="desserts.html" class="nav-link px-2 text-muted">Desserts</a></li>
+            <li class="nav-item"><a href="" class="nav-link px-2 text-muted">Contact</a></li>
+        </ul>
+        <p class="text-center text-muted">&copy; Developer Sergey Dubrovin 2022</p>
+    </footer>
+
+    <!-- JS Bootstrap-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS Bootstrap-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <title>Japanese Food</title>
+    <link rel="icon" href="img/fav/fav.png" type="image">
+</head>
+<body>
+    <nav class="navbar fixed-top navbar-expand-xl navbar-dark bg-dark">
+    <!-- <nav class="navbar navbar-expand-xl navbar-dark style="background-color: #ee3311;"> color replacement option -->
+        <div class="container">
+            <a href="" class="navbar-brand">Japanese Food</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" 
+            aria-controls="navbarContent" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav me-auto mb-6">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>                    
+                    <li class="nav-item">
+                        <a href="recipes.html" class="nav-link">Recipes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="travelers.html" class="nav-link">Traveler's Tags</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Contents
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                          <li><a class="dropdown-item" href="index.html">Dishes that reflect the essence of Japanese cuisine</a></li>
+                          <li><a class="dropdown-item" href="drinks.html">The most popular drinks</a></li>
+                          <li><a class="dropdown-item" href="desserts.html">Japanese desserts</a></li>                          
+                        </ul>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Entrance</button>
+                    <button class="btn btn-outline-danger ms-3">Exit</button>
+                </div>
+            </div>
+        </div>
+    </nav>  
+
+    <div class="modal fade" id="exampleModal" tbindex="-1" aria-labelledby="exanleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Registration</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="inputEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="inputEmail" aria-describedby="Email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="inputPass" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="inputPass">
+                        </div>
+                        <fieldset>
+                            <div class="fow mb-3">
+                                <legend class="col-form-label col-sm-2">Specify</legend>
+                                <div class="col-sm-10">
+                                    <div class="form-check">
+                                        <input type="radio" class="form-check-input" 
+                                        name="radios" value="option1" id="radios1" checked>
+                                        <label for="radios1" class="for-check-label">18 years old</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="radio" class="form-check-input" 
+                                        name="radios" value="option1" id="radios2">
+                                        <label for="radios2" class="for-check-label">no 18 years old</label>
+                                    </div>
+                                   
+                                </div>
+                           </div>
+                           <div class="row mb-3">
+                                <div class="col-form-label col-sm-2">Checkbox</div>
+                                <div class="col-sm-10">
+                                    <div class="form-check">
+                                        <input type="checkbox" id="gridCheck" class="form-check-input">
+                                        <label for="gridCheck" class="form-check-label">Save password</label>
+                                    </div>
+                                </div>
+                           </div>
+                        </fieldset>
+                    </form>
+                </div>
+            <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save chsnges</button>
+                </div>
+            </div>
+     
+        </div>
+    </div>
+    
+    <main>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/xk_unsplash.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/xunsplash.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/unsplash.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/qunsplash.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/sunsplash.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Предыдущий</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Следующий</span>
+            </button>
+        </div>
+
+    <div class="container">
+            <div class="container">
+                <h2 class="text-center my-5">The most popular drinks</h2>
+                <p class="fs-5">The Japanese are famous for their ability to use the experience of other countries, creating their unique product based on it. The list of alcoholic and non-alcoholic beverages, which the residents of the Land of the Rising Sun not only consume with special pleasure, but also consider part of their unique culture, perfectly illustrates this statement.</p>
+            </div>
+        
+        <div class="card mb-3">
+            <img src="img/sake.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h2 class="card-title">Sake</h2>
+              <p class="card-text">The alcoholic beverage, which has long been one of Japan's iconic symbols, is made by fermenting special rice varieties. It is known locally as nihonshu in the country, and the legal name for it is seishu. The strength of sake may vary from 14 to 20 degrees. Its color varies from clear to light yellow, greenish, or nutty. The flavor palette contains notes of tropical fruits, apples, pears, grapes, bananas, baked quince, ripe cheese, soy sauce, or fresh mushrooms. The aroma captures hints of spicy herbs, flowers, fruits, cereals, woody, and vanilla notes. Premium varieties — daiginjo, junmai daiginjo, ginjo, and junmai ginjo — have the richest and most delicate taste with a long and fresh aftertaste. But Japanese people prefer lower-class sake with food, such as honjōzō or junmai, and table sake, such as futsū-shu. When it comes to serving, there is a simple rule: premium varieties are drunk chilled or at room temperature, while inferior varieties are heated.</p>
+              <p class="card-text"><small class="text-muted">Sake © Shaiith / Shutterstock</small></p>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <img src="img/beer.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h2 class="card-title">Beer</h2>
+              <p class="card-text">Japan is ahead of many countries in its consumption. Drinking beer together with colleagues after work, for example, is an obligatory part of social activity. There are both established brands, many of which are more than a hundred years old, and products from small craft breweries. The biggest players in the market are Asahi, Kirin, Sapporo, Suntory, and Orion. Although brewing in Japan has ancient roots, its production on the basis of barley malt began relatively recently, in the XIX century. Before that, rice and sorghum were the main raw materials. Modern production is based on world brewing standards and principles. Pale lagers occupy the largest share of the market. But, of course, Japan also has its unique types of this drink. For example, Happoshu contains less than 25 percent malt and is made from local grains and beans. And then there is happōsei, which has no malt at all and is made from soybeans. These drinks have a peculiarly sweet taste. There is also a tradition in Japan of brewing seasonal beers. For example, the autumn beer has a higher strength of 6% compared to the standard 5%.</p>
+              <p class="card-text"><small class="text-muted">Free to use under the Unsplash License</small></p>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <img src="img/shochu.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h2 class="card-title">Shochu</h2>
+              <p class="card-text">It is another type of alcohol that is popular in Japan. It is made from rice with the addition of buckwheat, sugar cane, yams, or wheat. The output is a transparent liqueur that tastes like Korean soju, Russian vodka, rum, or caramel whiskey, depending on the additional ingredients. There are two types of shochu — korui and otsurui. The first must not exceed 36 degrees and the second — 45 degrees. Most often, however, they are diluted to the more popular with consumers 25 degrees. In its pure form, shochu is drunk well chilled or with the addition of ice, taking small sips. It is also used as part of a variety of cocktails, combined with soda, fruit juices, and even tea — milk oolong.</p>
+              <p class="card-text"><small class="text-muted">Free to use under the Unsplash License</small></p>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <img src="img/umeshu.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h2 class="card-title">Umeshu</h2>
+              <p class="card-text">This alcoholic beverage is made from the ume plum, which is an iconic product in Japan. It is commonly referred to as wine. But it is much closer to liqueurs in terms of production technology: the fruit is poured with sugar and infused with alcohol. The result is a mellifluous, tart-sweet taste with a deep aftertaste. It is served as an aperitif to light dishes and snacks. It is served with ice in summer and hot as mulled wine in winter. It is also consumed in cocktails, added to sparkling water, green tea, fruit juices, and sometimes to gin.</p>
+              <p class="card-text"><small class="text-muted">Umeshu - green plum wine © Factory X / Shutterstock</small></p>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <img src="img/whiskey.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h2 class="card-title">Whiskey</h2>
+              <p class="card-text">The first commercial production of whiskey in Japan began in 1924. For a long time, almost all the products of local distilleries were supplied to the local market. The situation changed in 2001. The 10-year-old single malt Yoichi (produced by Nikka) was named "Best of the Best" in the international blind tasting organized by Whiskey Magazine. Thus it displaced the famous Scotch whiskey on the throne. This allowed other Japanese producers to occupy their niche on the world market. The most popular brands belong to Suntory (Yamazaki and Hakushu distilleries), Nikka (Yoichi and Miyagikyo distilleries), Kirin (Fuji Gotemba), Chichibu, Shinshu, and White Oak. They produce single malt and blended whisky with a wide range of aromas and flavors, from classic smoky and peaty to light floral and fruity. Japanese whiskey is consumed straight (with ice or water) and in cocktails.</p>
+              <p class="card-text"><small class="text-muted">Free to use under the Unsplash License</small></p>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <img src="img/matcha-tea.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h2 class="card-title">Matcha</h2>
+              <p class="card-text">The technology of producing powdered green tea came to the country many centuries ago from China. Over time, it was refined and made it possible to obtain a unique product that gradually conquered the whole world. It is matcha that the Japanese use during the classic tea ceremony. But even in everyday life, far from rituals, they drink it frequently. You can find it hot or cold in every vending machine; it is served in cafes and restaurants with traditional sweets, and it is used in dry form as a flavoring and for making desserts — pastries, mousse, ice cream, candies, and chocolates. Tea is also added to milk, fruit, and alcoholic cocktails. The most expensive variety of matcha is ceremonial. It has a fresh sweet and creamy taste with a slight bitterness, a harmonious and pleasant aftertaste, and a delicate flavor. The premium matcha has a more pronounced bitterness with marine notes in the aftertaste. The culinary variety is the most tart with a grassy flavor. There are two ways to make matcha. Koicha (strong) is used during the tea ceremony. Usucha (weak) is drunk without strict formalities with family or friends.</p>
+              <p class="card-text"><small class="text-muted">Green tea matcha © i.iheart.com</small></p>
+            </div>
+        </div>
+    </div>    
+        
+    </main>
+    <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
+            <li class="nav-item"><a href="recipes.html" class="nav-link px-2 text-muted">Recipes</a></li>
+            <li class="nav-item"><a href="travelers.html" class="nav-link px-2 text-muted">Traveler's Tags</a></li>
+            <li class="nav-item"><a href="drinks.html" class="nav-link px-2 text-muted">Popular drinks</a></li>
+            <li class="nav-item"><a href="desserts.html" class="nav-link px-2 text-muted">Desserts</a></li>
+            <li class="nav-item"><a href="" class="nav-link px-2 text-muted">Contact</a></li>
+        </ul>
+        <p class="text-center text-muted">&copy; Developer Sergey Dubrovin 2022</p>
+    </footer>
+
+    <!-- JS Bootstrap-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

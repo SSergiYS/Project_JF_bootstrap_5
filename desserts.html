@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS Bootstrap-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <title>Japanese Food</title>
+    <link rel="icon" href="img/fav/fav.png" type="image">
+</head>
+<body>
+    <nav class="navbar fixed-top navbar-expand-xl navbar-dark bg-dark">
+    <!-- <nav class="navbar navbar-expand-xl navbar-dark style="background-color: #ee3311;"> color replacement option -->
+        <div class="container">
+            <a href="" class="navbar-brand">Japanese Food</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" 
+            aria-controls="navbarContent" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav me-auto mb-6">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>                                        
+                    <li class="nav-item">
+                        <a href="recipes.html" class="nav-link">Recipes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="travelers.html" class="nav-link">Traveler's Tags</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Contents
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                          <li><a class="dropdown-item" href="index.html">Dishes that reflect the essence of Japanese cuisine</a></li>
+                          <li><a class="dropdown-item" href="drinks.html">The most popular drinks</a></li>
+                          <li><a class="dropdown-item" href="desserts.html">Japanese desserts</a></li>                          
+                        </ul>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Entrance</button>
+                    <button class="btn btn-outline-danger ms-3">Exit</button>
+                </div>
+            </div>
+        </div>
+    </nav>  
+
+    <div class="modal fade" id="exampleModal" tbindex="-1" aria-labelledby="exanleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Registration</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="inputEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="inputEmail" aria-describedby="Email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="inputPass" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="inputPass">
+                        </div>
+                        <fieldset>
+                            <div class="fow mb-3">
+                                <legend class="col-form-label col-sm-2">Specify</legend>
+                                <div class="col-sm-10">
+                                    <div class="form-check">
+                                        <input type="radio" class="form-check-input" 
+                                        name="radios" value="option1" id="radios1" checked>
+                                        <label for="radios1" class="for-check-label">18 years old</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="radio" class="form-check-input" 
+                                        name="radios" value="option1" id="radios2">
+                                        <label for="radios2" class="for-check-label">no 18 years old</label>
+                                    </div>
+                                    
+                                </div>
+                           </div>
+                           <div class="row mb-3">
+                                <div class="col-form-label col-sm-2">Checkbox</div>
+                                <div class="col-sm-10">
+                                    <div class="form-check">
+                                        <input type="checkbox" id="gridCheck" class="form-check-input">
+                                        <label for="gridCheck" class="form-check-label">Save password</label>
+                                    </div>
+                                </div>
+                           </div>
+                        </fieldset>
+                    </form>
+                </div>
+            <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save chsnges</button>
+                </div>
+            </div>
+     
+        </div>
+    </div>
+    
+    <main>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/marban.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/japanq.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/medium_shot.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/japanese_street.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Предыдущий</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Следующий</span>
+            </button>
+        </div>
+
+        <div class="container">
+            <div class="container">
+                <h2 class="text-center my-5">Japanese desserts</h2>
+                <p class="fs-5">Japanese sweets are a special temptation for the traveler. There are so many of them here. And all of them greatly expand the usual scope, thanks to the most unusual flavor combinations and special aesthetics of preparation and serving.</p>
+            </div>
+        
+            <div class="card mb-3">
+                <img src="img/wagashi.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h2 class="card-title">Wagashi</h2>
+                  <p class="card-text">This is the common name for traditional sweets, which are most often offered not for dessert but for tea. As an authentic form of pastry art, they originated in Japan as early as the VIII century. All wagashi are characterized by the use of only natural products such as various types of beans, rice, yams, chestnuts, spicy herbs, agar-agar, tea, and wasanbon cane sugar. The decoration of desserts, which is also canonical, is also very important. It most often reflects natural forms and can vary according to the season. There are three main groups of wagashi:</p>
+                  <ul>
+                    <li>Namagashi is sweets made from raw ingredients. They are used during the traditional tea ceremony and are consumed only freshly prepared.</li>
+                    <li>Han-namagashi is made from heat-treated foods. These desserts can be stored for several weeks.</li>
+                    <li>Higashi is dry sweets that are made from sugar, bean, or rice flours by pressing. They can be stored for several months.</li>
+                  </ul>
+                  <p class="card-text">The Japanese refer to confectionery made according to adapted European recipes using milk and eggs as nanban-gashi.</p>
+                  <p class="card-text"><small class="text-muted">Wagashi © Kenishirotie / Shutterstock</small></p>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <img src="img/mochi.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h2 class="card-title">Daifukumochi</h2>
+                  <p class="card-text">It can safely be called the world's most famous variety of wagashi. It is a balloon-shaped flatbread made of pounded sticky rice (moсhi proper) and filled with anko, a sweet paste made from red adzuki beans. In the classic version, the dessert is white, pastel green, or pale pink and sprinkled with a thin layer of starch, powdered sugar, or cocoa powder. Berries or fruit can also be added to the filling.</p>
+                  <p class="card-text"><small class="text-muted">Daifukumochi © Chris worldwide / Shutterstock</small></p>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <img src="img/matcha-dorayak.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h2 class="card-title">Dorayaki</h2>
+                  <p class="card-text">This is another popular variation of wagashi. It consists of two delicate pancakes with a filling between them. The most common filling is anko. The pancakes are made with biscuit dough, which is called castella in Japan. After baking, it becomes porous and airy. And thanks to the addition of honey, the dessert is very fragrant.</p>
+                  <p class="card-text"><small class="text-muted">Dorayaki © JoesyWu / Shutterstock</small></p>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <img src="img/yokan.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h2 class="card-title">Yōkan</h2>
+                  <p class="card-text">This jelly-like marshmallow made from beans, sugar, and agar-agar is very popular with the Japanese and is often given as a gift to the homeowners who come to visit. Yokan is usually made in the form of briquettes and cut into small portions before serving. A thicker type of dessert is called neri yokan. There is also mizu yokan, which has more water in it and is more often eaten chilled during the hot season. The dessert may contain slices of persimmon, yams, figs, crumbled chestnuts, nuts, and sweet adzuki beans as flavor additives.</p>
+                  <p class="card-text"><small class="text-muted">Yōkan - sweet potato dessert © Cahaya Images / Shutterstock</small></p>
+                </div>
+            </div> 
+            <div class="card mb-3">
+                <img src="img/dango.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h2 class="card-title">Dango</h2>
+                  <p class="card-text">This dessert has become world-famous because it is often portrayed in Japanese anime. These are rice flour dumplings, most often strung on a skewer of three or five. They can be naturally colored or tinted in pastel shades with red beans or green tea. This dessert has many preparation and serving options — it is coated with anko paste, kinako soy flour, sesame seeds, or mitarashi sauce. Some varieties are grilled, pan-fried, or wrapped in sasa (young shoots of edible bamboo). Dango is always available at stores or street food stalls. This dessert is especially popular during fairs, sakura festivals, celebrations of the autumn moon, and New Year's Eve festivities.</p>
+                  <p class="card-text"><small class="text-muted">Free to use under the Unsplash License</small></p>
+                </div>
+            </div> 
+            <div class="card mb-3">
+                <img src="img/taiyaki.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h2 class="card-title">Taiyaki</h2>
+                  <p class="card-text">This is another iconic Japanese dessert that is often purchased as a snack at supermarket food courts or street stalls. It is a waffle shaped like a fish (sea bream) with a filling. It can be sweet pasta made from white or red beans, yams, custard, chocolate, berry, or fruit jams. You can also try taiyaki with salty fillings such as cheese, sausage, and even okonomiyaki.</p>
+                  <p class="card-text"><small class="text-muted">Taiyaki - a fish-shaped dessert stuffed with red beans © NP27 / Shutterstock</small></p>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <img src="img/ice-cream.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h2 class="card-title">Ice Cream</h2>
+                  <p class="card-text">The Japanese are perhaps unrivaled in the variety of tastes and ways of presenting this frozen sweet. Mochi ice cream, a creamy treat in a thin shell of rice dough, is especially popular now. Another example of the original presentation is a cold dessert hidden inside small plastic bottles. You can also get a glass of coarsely chopped ice soaked in fruit juice to refresh yourself in the heat. And for those who prefer the classic cone shape, you can experiment with flavors. There is a myriad of flavors — from the quite traditional (chocolate, vanilla, nuts, fruit) to the absolutely fantastic. Japan has ice cream flavored with wasabi, miso, soy sauce, tempura, seafood, fried meat, sake, tofu, boiled eggs, ramen, natto, and even ammonia. Compared to these, the cones dyed with squid ink or covered with gold leaf are no longer particularly surprising.</p>
+                  <p class="card-text"><small class="text-muted">Vanilla Japanese Ice Cream © Anna_Pustynnikova / Shutterstock</small></p>
+                </div>
+            </div>
+        </div>    
+        
+    </main>
+    <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
+            <li class="nav-item"><a href="recipes.html" class="nav-link px-2 text-muted">Recipes</a></li>
+            <li class="nav-item"><a href="travelers.html" class="nav-link px-2 text-muted">Traveler's Tags</a></li>
+            <li class="nav-item"><a href="drinks.html" class="nav-link px-2 text-muted">Popular drinks</a></li>
+            <li class="nav-item"><a href="desserts.html" class="nav-link px-2 text-muted">Desserts</a></li>
+            <li class="nav-item"><a href="" class="nav-link px-2 text-muted">Contact</a></li>
+        </ul>
+        <p class="text-center text-muted">&copy; Developer Sergey Dubrovin 2022</p>
+    </footer>
+
+    <!-- JS Bootstrap-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
